@@ -1,0 +1,137 @@
+body {
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.cards {
+    --spacing: 25px;
+    --colums: 4;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * var(--spacing));
+}
+.card {
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    width: calc(calc(100% / var(--colums)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 767.98px) {
+    .cards {
+        --spacing: 15px;
+        --colums: 1;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .cards {
+        --colums: 2;
+    }
+}
+
+.card-image {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+.card-content {
+    height: calc(100% - 200px);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    padding: 25px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+.card-user {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.card-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 100rem;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.card-user-info {
+    padding-left: 20px;
+    flex: 1;
+}
+.card-user-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+.card-user-name {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    padding-right: 10px;
+    margin: 0;
+}
+
+.card-user-top ion-icon {
+    color: #20e3b2;
+}
+.card-user-game {
+    color: #999;
+    font-weight: 300;
+    font-size: 13px;
+}
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    border-top: 1px solid #eee;
+    margin-top: auto;
+    flex-shrink: 0;
+}
+.card-live {
+    display: inline-block;
+    min-width: 72px;
+    padding: 0 12px 0 35px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    background-color: #ff754c;
+}
+.card-watching {
+    position: relative;
+    padding-left: 16px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #808191;
+}
+
+.card-top {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-bottom,
+.card-user {
+    margin-top: auto;
+}
