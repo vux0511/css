@@ -159,12 +159,150 @@
 // console.log(beasts.indexOf("bison", 2));
 // console.log(beasts.indexOf("giraffe"));
 
-var array = ["ant", "bison", "camel", "duck", "bison"];
+// var array = ["ant", "bison", "camel", "duck", "bison"];
 
-array.forEach(function (element) {
-    console.log(element);
-});
+// array.forEach(function (element) {
+//     console.log(element);
+// });
 
 // > "a"
 // > "b"
 // > "c"
+
+// function randomArray(length, min, max) {
+//     let random = [];
+//     while (random.length < length) {
+//         let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+//         if (!random.includes(randomNumber)) {
+//             random.push(randomNumber);
+//         }
+//     }
+//     return random;
+// }
+
+// let random = randomArray(95, 1, 100);
+
+// let findNumber = [];
+// for (let num = 1; num <= 100; num++) {
+//     if (!random.includes(num)) {
+//         findNumber.push(num);
+//     }
+// }
+
+// findNumber.forEach((num) => {
+//     console.log(num);
+// });
+
+// function generateRandomArray(length) {
+//     var numberSet = new Set();
+
+//     while (numberSet.size < length) {
+//         var number = Math.floor(Math.random() * 100) + 1; // Chọn một số ngẫu nhiên từ 1 đến 100
+//         if (!numberSet.has(number))
+//             numberSet.add(number);
+//     }
+
+//     array = Array.from(numberSet);
+//     return array;
+// }
+
+// function findMissingNumbers(array, count) {
+//     var numberSet = new Set(array);
+//     var missingNumbers = [];
+
+//     for (var number = 1; number <= 100; number++) {
+//         if (!numberSet.has(number)) {
+//             missingNumbers.push(number);
+//             if (missingNumbers.length >= count) {
+//                 break;
+//             }
+//         }
+//     }
+
+//     return missingNumbers;
+// }
+
+// var array = generateRandomArray(95); // Tạo mảng gồm 95 số ngẫu nhiên
+// console.log("Mảng: " + array);
+
+// var missingNumbers = findMissingNumbers(array, 5); // Tìm 5 số không trùng
+// console.log("Các số không trùng: " + missingNumbers);
+
+// class StringHelper {
+//     constructor(value) {
+//         this.value = value;
+//     }
+
+//     concat(other) {
+//         let result = "";
+//         const valueChars = this.value.split("");
+//         const otherChars = other.split("");
+
+//         for (let i = 0; i < valueChars.length; i++) {
+//             result += valueChars[i];
+//         }
+
+//         for (let i = 0; i < otherChars.length; i++) {
+//             result += otherChars[i];
+//         }
+
+//         return result;
+//     }
+
+//     subString(startIndex, length) {
+//         let result = "";
+//         const valueChars = this.value.split("");
+
+//         for (let i = startIndex; i < startIndex + length; i++) {
+//             if (valueChars[i]) {
+//                 result += valueChars[i];
+//             }
+//         }
+
+//         return result;
+//     }
+
+//     distinct() {
+//         let result = "";
+//         const valueChars = this.value.split("");
+//         const distinctChars = [];
+
+//         for (let i = 0; i < valueChars.length; i++) {
+//             if (!distinctChars.includes(valueChars[i])) {
+//                 result += valueChars[i];
+//                 distinctChars.push(valueChars[i]);
+//             }
+//         }
+
+//         return result;
+//     }
+
+//     contains(substring) {
+//         const valueChars = this.value.split("");
+//         const substringChars = substring.split("");
+//         const valueLength = valueChars.length;
+//         const substringLength = substringChars.length;
+
+//         for (let i = 0; i <= valueLength - substringLength; i++) {
+//             let found = true;
+//             for (let j = 0; j < substringLength; j++) {
+//                 if (valueChars[i + j] !== substringChars[j]) {
+//                     found = false;
+//                     break;
+//                 }
+//             }
+//             if (found) {
+//                 return true;
+//             }
+//         }
+
+//         return false;
+//     }
+// }
+
+// const helper = new StringHelper("Hello");
+// console.log(helper.concat(" World"));
+// console.log(helper.subString(1, 3));
+// console.log(helper.distinct());
+// console.log(helper.contains("lo"));
+// console.log(helper.contains("abc"));
