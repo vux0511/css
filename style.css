@@ -3,11 +3,8 @@
 }
 
 body {
-    background-color: #ccc;
     margin: 0;
     padding: 0;
-}
-body {
     font-family: "Poppins", sans-serif;
     background-color: initial;
 }
@@ -168,4 +165,42 @@ body {
     padding: 20px;
     flex: 1;
     background-color: violet;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown__selected {
+    padding: 20px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: green;
+}
+
+.item {
+    display: block;
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    width: 200px;
+}
+
+.item:hover {
+    background-color: forestgreen;
+    width: 200px;
+}
+
+.dropdown:hover .dropdown__content {
+    display: block;
+    width: 200px;
 }

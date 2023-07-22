@@ -198,8 +198,7 @@
 
 //     while (numberSet.size < length) {
 //         var number = Math.floor(Math.random() * 100) + 1; // Chọn một số ngẫu nhiên từ 1 đến 100
-//         if (!numberSet.has(number))
-//             numberSet.add(number);
+//         if (!numberSet.has(number)) numberSet.add(number);
 //     }
 
 //     array = Array.from(numberSet);
@@ -306,3 +305,47 @@
 // console.log(helper.distinct());
 // console.log(helper.contains("lo"));
 // console.log(helper.contains("abc"));
+
+function createTable(objects) {
+    // Create the table element.
+    var table = document.createElement("table");
+
+    // Create the header row.
+    var headerRow = document.createElement("tr");
+    for (var property in objects[0]) {
+        var headerCell = document.createElement("th");
+        headerCell.textContent = property;
+        headerRow.appendChild(headerCell);
+    }
+
+    // Create the data rows.
+    for (var object of objects) {
+        var dataRow = document.createElement("tr");
+        for (var property in object) {
+            var dataCell = document.createElement("td");
+            dataCell.textContent = object[property];
+            dataRow.appendChild(dataCell);
+        }
+        table.appendChild(dataRow);
+    }
+
+    // Return the table element.
+    return table;
+}
+
+var objects = [
+    {
+        name: "John Doe",
+        age: 30,
+        city: "New York",
+    },
+    {
+        name: "Jane Doe",
+        age: 25,
+        city: "Los Angeles",
+    },
+];
+
+var table = createTable(objects);
+
+document.body.appendChild(table);
