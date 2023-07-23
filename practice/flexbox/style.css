@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.flex {
+    --column: 4;
+    --spacing: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: var(--spacing);
+    margin-left: var(--spacing);
+}
+
+.flex__item {
+    width: calc(100% / var(--column) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: 40px;
+    border-radius: 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.flex__item-top img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    object-fit: cover;
+}
+
+.flex__item-main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-main-top {
+    padding: 24px;
+}
+
+p.flex-title {
+    margin-bottom: 16px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.flex-user {
+    display: flex;
+}
+
+.flex-user img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.flex-infor {
+    font-size: 15px;
+    font-weight: 500;
+    color: #11142d;
+    cursor: pointer;
+}
+
+.flex-infor ion-icon {
+    color: #20e3b2;
+}
+
+.flex-game {
+    font-size: 13px;
+    color: #808191;
+    font-weight: normal;
+}
+
+.flex-main-bottom {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    width: 100%;
+    border-top: 1px solid #eee;
+}
+
+.watch {
+    padding: 0 18px 0 18px;
+    border-radius: 8px;
+    background: #ff754c;
+}
+
+.watch ion-icon {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
+.watch a {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.flex-watching {
+    font-size: 12px;
+    font-weight: 500;
+    color: #0049c6;
+}
+
+.flex-watching span {
+    color: #808191;
+}
