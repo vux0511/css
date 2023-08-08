@@ -1,0 +1,298 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #141943;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+.banner__heading {
+    width: 50%;
+}
+.banner__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 78.5px; /* 90.23% */
+    letter-spacing: 2.175px;
+    text-transform: capitalize;
+    padding-bottom: 20px;
+    color: white;
+}
+.banner__desc {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    color: white;
+    max-width: 500px;
+}
+
+.banner__button {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.button {
+    padding: 13px 55px;
+    background-color: #2f80ed;
+    border-radius: 60px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.button-transparent {
+    background-color: transparent;
+    color: #2f80ed;
+    border: 2px solid #2f80ed;
+}
+
+.banner__image {
+    width: 50%;
+    transform: translateX(-10px);
+    transform: skewX(-10deg);
+    padding-left: 100px;
+    position: relative;
+}
+
+.banner__image-main {
+    width: 416.43px;
+    height: 400.915px;
+    object-fit: cover;
+    flex-shrink: 0;
+    border-radius: 16px;
+    box-shadow: 16.05801773071289px 17.12855339050293px 35.327640533447266px 0px
+        rgba(0, 0, 0, 0.09);
+}
+
+.banner__bg {
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    top: -30px;
+    left: 70px;
+    z-index: -10;
+    border-radius: 21.411px;
+    background: linear-gradient(
+        137deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    box-shadow: 0px 4.282138347625732px 52.45619583129883px 0px
+        rgba(0, 7, 72, 0.12);
+    backdrop-filter: blur(13.381682395935059px);
+}
+.banner__bg::before {
+    content: "";
+    position: absolute;
+    width: 275.127px;
+    height: 547.043px;
+    transform: rotate(39.402deg);
+    bottom: -250px;
+    fill: rgba(143, 0, 255, 0.35);
+    filter: blur(80.29009246826172px);
+    background-color: #8f00ff59;
+}
+
+.banner__bg1 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    flex-direction: column;
+    padding: 10px 20px;
+    position: absolute;
+    width: 170px;
+    height: 60px;
+    top: -15px;
+    right: 70px;
+    z-index: 1;
+    border-radius: 16.058px;
+    background: linear-gradient(
+        137deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    box-shadow: 0px 4.282138347625732px 52.45619583129883px 0px
+        rgba(0, 7, 72, 0.12);
+    backdrop-filter: blur(13.381682395935059px);
+    color: #fff;
+}
+/* .banner__bg1::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    transform: rotate(39.402deg);
+    bottom: 0px;
+    right: 0;
+    fill: rgba(173, 0, 255, 0.35);
+    filter: blur(80.29009246826172px);
+    background-color: red;
+} */
+
+.banner__bg2 {
+    position: absolute;
+    width: 400px;
+    height: 450px;
+    /* top: -30px;
+    left: 70px; */
+    top: 45px;
+    right: 70px;
+    z-index: -10;
+    border-radius: 21.411px;
+    background: linear-gradient(
+        137deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    box-shadow: 0px 4.282138347625732px 52.45619583129883px 0px
+        rgba(0, 7, 72, 0.12);
+    backdrop-filter: blur(13.381682395935059px);
+}
+.banner__bg2::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    transform: rotate(39.402deg);
+    bottom: 0px;
+    right: 0;
+    fill: rgba(173, 0, 255, 0.35);
+    filter: blur(80.29009246826172px);
+    background-color: #ad00ff59;
+}
+
+.bid-now {
+    font-size: 22.693px;
+    font-weight: 700;
+}
+.bid-desc {
+    font-size: 14.987px;
+    font-weight: 500;
+}
+
+.image-item {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.banner__bg3 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 270px;
+    height: 80px;
+    right: 20px;
+    bottom: -30px;
+    z-index: 1;
+    border-radius: 21.411px;
+    background: linear-gradient(
+        137deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    box-shadow: 0px 4.282138347625732px 52.45619583129883px 0px
+        rgba(0, 7, 72, 0.12);
+    backdrop-filter: blur(13.381682395935059px);
+}
+
+.author {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.name-item {
+    color: #fff;
+    font-size: 23.975px;
+    font-weight: 600;
+    line-height: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.name-author {
+    color: #fff;
+    font-size: 13.917px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-word;
+}
+
+.banner__bg4 {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px 20px;
+
+    position: absolute;
+    width: 270px;
+    height: 80px;
+    left: 60px;
+    bottom: -60px;
+    z-index: 1;
+    border-radius: 21.411px;
+    background: linear-gradient(
+        137deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.15) 100%
+    );
+    box-shadow: 0px 4.282138347625732px 52.45619583129883px 0px
+        rgba(0, 7, 72, 0.12);
+    backdrop-filter: blur(13.381682395935059px);
+    color: white;
+}
+
+.eth-price {
+    font-size: 23.693px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.eth-title {
+    font-size: 14.987px;
+    font-style: normal;
+    font-weight: 400;
+}
+.dolar-price {
+    text-align: right;
+    font-size: 19.411px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.growth {
+    color: #24ff00;
+    text-align: right;
+    font-size: 14.987px;
+    font-style: normal;
+    font-weight: 500;
+}

@@ -1,0 +1,20 @@
+body {
+    background-color: #141945;
+    fill: #141943;
+}
+
+.wrapper {
+    /* background: linear-gradient(
+        360deg,
+        rgba(255, 255, 255, 0.2) 0%,
+        rgba(219, 0, 255, 0) 100%
+    );
+    min-height: 1000px;
+    width: 2677.186px;
+    height: 1320.329px;
+    transform: rotate(-10.011deg);
+    flex-shrink: 0;
+    /* background-color: red; */
+    /* fill: rgba(143, 0, 255, 0.35);
+    filter: blur(80.29009246826172px); */
+}
